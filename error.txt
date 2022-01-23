@@ -1,0 +1,22 @@
+errores:
+-al hacer mucho zoom se corre para abajo el nav.
+-no puedo poner transparente el div como para mostrar una seccion que se revela completa al hacer hover.
+-No se porque no estaria funcionando el responsive despues de poner como creeria que es el tamaño con vw y vh.
+-Falta corregir algunas cosas del CSS
+
+
+noAsides editarlos luego.
+-Contacto
+-Sobrenos
+Ver bien las cosas que quedaron sueltas
+
+Clases sueltas (no corroborado nada ademas de index):
+-main--noAside
+-main__subtitulo y derivadas
+-main__parrafo y derivados (excep index)
+
+Basicamente todo lo que no sea index y no se replique.
+Ej de replique:
+-Aside
+-Header
+-Footer

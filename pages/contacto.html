@@ -1,102 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--------------------------------------------------------    Head    ------------------------------------------------------------->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/Icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/182865b7c8.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
+<!--------------------------------------------------------    Body    ------------------------------------------------------------->
 <body>
-    <header>
-        <img src="../assets/img/Icon.ico">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="recetas.html">Recetas</a></li>
-                <li><a href="mis_recetas.html">Mis Recetas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Contactanos</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Eum, perspiciatis eos! Quo deserunt mollitia ad. Sunt 
-            consequatur quod doloremque necessitatibus, nemo ab 
-            animi maxime commodi explicabo, adipisci, accusamus 
-            eius exercitationem.</p>
-    <section>
-        <h2>Envianos una consulta</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Consequuntur necessitatibus enim consectetur in quos 
-             voluptatibus, voluptate asperiores laudantium odit eos!
-        </p>
-        <div>
-            <form action="#">
-                <label for="email">Ingrese su email:
-					<input type="email" placeholder="nombre@gmail.com" name="email">
-				</label>    
-            </form>
-        </div>
-    </section>
-    <section>
-        <h2>Ingresa tu receta</h2>
-        <p>Sera visible solo para vos, y en caso de marcar publicar, sera verificado por el
-            staff de Ghiaccio. Si tu trago alcanza las 5 estrellas, podes obtener beneficios
-             como descuentos y que el trago este disponible para todos los usuarios!
-        </p>
-        <article>
+<!--------------------------------------------------------    Header    ------------------------------------------------------------->
+    <div class="grid grid--noAside">
+        <header class="header">
+            <img src="../assets/img/Icon.ico" class="header__icon">
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html" class="nav__item">Inicio</a></li>
+                    <li><a href="recetas.html" class="nav__item">Recetas</a></li>
+                    <li><a href="mis_recetas.html" class="nav__item">Mis Recetas</a></li>
+                    <li><a href="contacto.html" class="nav__item nav__item--active">Contacto</a></li>
+                    <li><a href="sobre_nosotros.html" class="nav__item">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!--------------------------------------------------------    Main    ------------------------------------------------------------->
+        <main class="main">
+            <h1 class="main__titulo">Contactanos</h1>
+            <p class="main__parrafo main__parrafo--noAside"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eum, perspiciatis eos! Quo deserunt mollitia ad. Sunt 
+                consequatur quod doloremque necessitatibus, nemo ab 
+                animi maxime commodi explicabo, adipisci, accusamus 
+                eius exercitationem.</p>
+    <!--------------------------------------------------------    Contactanos    ------------------------------------------------------------->
+        <section>
+            <h2 class="main__subtitulo">Envianos una consulta</h2>
+            <p class="main__parrafo main__parrafo--noAside">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur necessitatibus enim consectetur in quos 
+                voluptatibus, voluptate asperiores laudantium odit eos!
+            </p>
             <div>
-            <form action="#">
-				<label for="nombre_rec">Ingrese el nombre de la receta:
-					<input type="text" placeholder="" name="receta">
-                </label>
-				<label for="email">Ingrese su email:
-					<input type="email" placeholder="nombre@gmail.com" name="email">
-				</label>
-				<label for="ingred"> Ingredientes:
-					<textarea placeholder="Ingredientes"></textarea>
-				</label>
-				<div><p>Seleccione como desea subir la receta:</p>
-					<div>Enviar al staff
-						<input type="radio" name="lado" value="izquierda">
-					</div>
-					<div>Publicar en privado
-						<input type="radio" name="lado" value="derecha">
-					</div>
-				</div>
-				<p>¿Del 1 a 10 que tan dulce consideras el trago?</p>
-				<input type="range" min="1" max="10">
-				<div>Queres recibir informacion cuando hagamos concursos de recetas?
-				<input type="checkbox" name="acepta" value="1">
-                </div>
-                <input type="submit" value="Enviar">
-				<input type="reset" value="Cancelar">
-			</form>
+                <form action="#">
+                    <label class="main__parrafo main__parrafo--input" for="email">Ingrese su email:
+                        <input class="main__input" type="email" placeholder="nombre@gmail.com" name="email">
+                    </label>    
+                </form>
             </div>
-        </article>
-    </section>
-    <aside>
-        <h2>¿Te faltan ingredientes?</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.23050065644!2d-64.26438364404248!3d-31.39928763608521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1638912932695!5m2!1ses!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <h2>Sugerencias de Ghiaccio</h2>
-        <ul>
-            <li>Una sugerencia dulce</li>
-            <p>Sugerencia dulce: Explicacion sugerencia dulce.</p>
-            <li>Una sugerencia amarga</li>
-            <p>Sugerencia amarga: Explicacion sugerencia amarga.</p>
-            <li>Una sugerencia tropical</li>
-            <p>Sugerencia tropical: Explicacion sugerencia tropical.</p>
-            <li>Una sugerencia clasica</li>
-            <p>Sugerencia clasica: Explicacion sugerencia clasica.</p>
-        </ul>
-    </aside>
-    </main>
-    <footer>
-        <p>© 2021, Ghiaccio Inc.</p>
-    </footer>
+        </section>
+    <!--------------------------------------------------------    Ingreso receta    ------------------------------------------------------------->
+        <section>
+            <h2 class="main__subtitulo">Ingresa tu receta</h2>
+            <p class="main__parrafo main__parrafo--noAside">Sera visible solo para vos, y en caso de marcar publicar, sera verificado por el
+                staff de Ghiaccio. Si tu trago alcanza las 5 estrellas, podes obtener beneficios
+                como descuentos y que el trago este disponible para todos los usuarios!
+            </p>
+            <article>
+                <div>
+                <form action="#">
+                    <label class="main__parrafo main__parrafo--input" for="nombre_rec">Ingrese el nombre de la receta:
+                        <input class="main__input" type="text" placeholder="" name="receta">
+                    </label>
+                    <label class="main__parrafo main__parrafo--input" for="email">Ingrese su email:
+                        <input class="main__input" type="email" placeholder="nombre@gmail.com" name="email">
+                    </label>
+                    <label class="main__parrafo main__parrafo--input" for="ingred"> Ingredientes:
+                        <textarea class="main__input" placeholder="Ingredientes"></textarea>
+                    </label>
+                    <div class="main__parrafo main__parrafo--input"><p>Seleccione como desea subir la receta:</p>
+                        <div>Enviar al staff
+                            <input class="main__input" type="radio" name="lado" value="izquierda">
+                        </div>
+                        <div class="main__parrafo main__parrafo--input">Publicar en privado
+                            <input class="main__input" type="radio" name="lado" value="derecha">
+                        </div>
+                    </div>
+                    <p class="main__parrafo main__parrafo--input">¿Del 1 a 10 que tan dulce consideras el trago?</p>
+                    <input class="main__input" type="range" min="1" max="10">
+                    <div class="main__parrafo main__parrafo--input">Queres recibir informacion cuando hagamos concursos de recetas?
+                    <input class="main__input" type="checkbox" name="acepta" value="1">
+                    </div>
+                    <input class="main__input" type="submit" value="Enviar">
+                    <input class="main__input" type="reset" value="Cancelar">
+                </form>
+                </div>
+            </article>
+        </section>
+        </main>
+<!--------------------------------------------------------    Footer    ------------------------------------------------------------->
+        <footer class="footer">
+            <ul class="footer_socialNetworks">
+                <li><i><a href="https://web.whatsapp.com/" class="fab fa-whatsapp fa-lg"></a></i></li>
+                <li><i><a href="https://www.instagram.com/" class="fab fa-instagram"></a></a></li>
+                <li><i><a href="https://www.facebook.com/" class="fab fa-facebook"></i></a></li>
+            </ul>
+            <p class="footer_footerText">© 2021, Ghiaccio Inc.</p>
+        </footer>
+    </div>
 </body>
 </html>

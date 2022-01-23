@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--------------------------------------------------------    Head    ------------------------------------------------------------->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/Icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/182865b7c8.js" crossorigin="anonymous"></script>
     <title>Sobre Nosotros</title>
 </head>
+<!--------------------------------------------------------    Body    ------------------------------------------------------------->
 <body>
-    <header>
-        <img src="../assets/img/Icon.ico">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="recetas.html">Recetas</a></li>
-                <li><a href="mis_recetas.html">Mis Recetas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+<!--------------------------------------------------------    Header    ------------------------------------------------------------->
+    <div class="grid grid--noAside">
+        <header class="header">
+            <img src="../assets/img/Icon.ico" class="header__icon">
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html" class="nav__item">Inicio</a></li>
+                    <li><a href="recetas.html" class="nav__item">Recetas</a></li>
+                    <li><a href="mis_recetas.html" class="nav__item">Mis Recetas</a></li>
+                    <li><a href="contacto.html" class="nav__item">Contacto</a></li>
+                    <li><a href="sobre_nosotros.html" class="nav__item nav__item--active">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!--------------------------------------------------------    Main    ------------------------------------------------------------->
+        <main class="main main--noAside">
+            <h1 class="main__titulo">Sobre nosotros</h1>
+            <h2 class="main__subtitulo">Nuestra historia</h2>
+            <section>
+                    <h3 class="main__subtitulo main__subtitulo--article">Una tradicion que paso de generación en generación</h3>
+                    <p class="main__parrafo main__parrafo--article main__parrafo--noAside">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit 
+                        fugiat eaque expedita animi laborum incidunt quos dolor odio 
+                        aspernatur culpa cum officia optio consequuntur provident et 
+                        illum, cupiditate nulla voluptate. Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Qui cum a aperiam eveniet! Optio 
+                        officia quasi esse animi. Voluptas laboriosam corrupti magni 
+                        atque maxime quas repellat nostrum harum est doloribus.</p>
+                    <img class="main__image main__image--noAside" src="../assets/img/bartender.jpg" alt="Bartender preparando un campari cocktail.">
+                <!--Siguiente entrega modificar y hacer que texto envuelva la imagen, como articulos-->
+                </article>
+                <article>
+                <h3 class="main__subtitulo main__subtitulo--article">Dos hermanos con una pasion desde chicos por llevar el negocio 
+                    de su padre al siguiente nivel</h3>
+                <p class="main__parrafo main__parrafo--article main__parrafo--noAside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem 
+                    in minus, incidunt deserunt, aspernatur atque cupiditate veritatis 
+                    a sequi labore perspiciatis perferendis quas ipsam blanditiis quis! 
+                    Pariatur facilis deleniti reprehenderit! Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Earum similique, corporis animi commodi 
+                    ut harum facere asperiores. Asperiores impedit unde explicabo doloribus
+                    inventore laborum, quidem enim beatae optio? Facilis.</p>
+                <img class="main__image main__image--noAside" src="../assets/img/bartender2.jpg" alt="Bartender preparando un cosmopolitan.">
+                </article>
+                <article>
+                    <h3 class="main__subtitulo main__subtitulo--article">Nuestro top 5 de tragos</h3>
+                    <p class="main__parrafo main__parrafo--article main__parrafo--noAside">Sinceramente, no pudimos poner uno arriba del otro, 
+                        pero es claro que nos encantan los clasicos.</p>
+                    <ul>
+                        <li><a class="main__listItem" href="recetas.html">Negroni</a></li>
+                        <li><a class="main__listItem" href="recetas.html">Boulevardier</a></li>
+                        <li><a class="main__listItem" href="recetas.html">Fernet con coca</a></li>
+                        <li><a class="main__listItem" href="recetas.html">Gin tonic</a></li>
+                        <li><a class="main__listItem" href="recetas.html">Whiskey sour</a></li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    <!--------------------------------------------------------    Footer    ------------------------------------------------------------->
+        <footer class="footer footer--noAside">
+            <ul class="footer_socialNetworks">
+                <li><i><a href="https://web.whatsapp.com/" class="fab fa-whatsapp fa-lg"></a></i></li>
+                <li><i><a href="https://www.instagram.com/" class="fab fa-instagram"></a></a></li>
+                <li><i><a href="https://www.facebook.com/" class="fab fa-facebook"></i></a></li>
             </ul>
-        </nav>
-    </header>
-    <section>
-        <article>
-            <h3>Una tradicion que paso de generación en generación</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit 
-                fugiat eaque expedita animi laborum incidunt quos dolor odio 
-                aspernatur culpa cum officia optio consequuntur provident et 
-                illum, cupiditate nulla voluptate. Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. Qui cum a aperiam eveniet! Optio 
-                officia quasi esse animi. Voluptas laboriosam corrupti magni 
-                atque maxime quas repellat nostrum harum est doloribus.</p>
-            <img src="../assets/img/bartender.jpg" alt="Bartender preparando un campari cocktail.">
-        </article>
-        <article>
-        <h3>Dos hermanos con una pasion desde chicos por llevar el negocio 
-            de su padre al siguiente nivel</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem 
-            in minus, incidunt deserunt, aspernatur atque cupiditate veritatis 
-            a sequi labore perspiciatis perferendis quas ipsam blanditiis quis! 
-            Pariatur facilis deleniti reprehenderit! Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Earum similique, corporis animi commodi 
-            ut harum facere asperiores. Asperiores impedit unde explicabo doloribus
-             inventore laborum, quidem enim beatae optio? Facilis.</p>
-        <img src="../assets/img/bartender2.jpg" alt="Bartender preparando un cosmopolitan.">
-        </article>
-        <article>
-            <h3>Nuestro top 5 de tragos</h3>
-            <p>Sinceramente, no pudimos poner uno arriba del otro, 
-                pero es claro que nos encantan los clasicos.</p>
-            <ul>
-                <li><a href="recetas.html">Negroni</a></li>
-                <li><a href="recetas.html">Boulevardier</a></li>
-                <li><a href="recetas.html">Fernet con coca</a></li>
-                <li><a href="recetas.html">Gin tonic</a></li>
-                <li><a href="recetas.html">Whiskey sour</a></li>
-            </ul>
-        </article>
-    </section>
-    <footer>
-        <p>© 2021, Ghiaccio Inc.</p>
-    </footer>
+            <p class="footer_footerText">© 2021, Ghiaccio Inc.</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,61 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<!--------------------------------------------------------    Head    ------------------------------------------------------------->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/Icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/182865b7c8.js" crossorigin="anonymous"></script>
     <title>Ghiaccio</title>
 </head>
-
+<!--------------------------------------------------------    Body    ------------------------------------------------------------->
 <body>
-    <header>
-        <img src="assets/img/Icon.ico">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href
-                    ="pages/recetas.html">Recetas</a></li>
-                <li><a href="pages/mis_recetas.html">Mis Recetas</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="pages/sobre_nosotros.html">Sobre nosotros</a></li>
+<!--------------------------------------------------------    Header    ------------------------------------------------------------->
+    <div class="grid">
+        <header class="header">
+            <img src="assets/img/Icon.ico" class="header__icon">
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="nav__item nav__item--active">Inicio</a></li>
+                    <li><a href="pages/recetas.html" class="nav__item">Recetas</a></li>
+                    <li><a href="pages/mis_recetas.html" class="nav__item">Mis Recetas</a></li>
+                    <li><a href="pages/contacto.html" class="nav__item">Contacto</a></li>
+                    <li><a href="pages/sobre_nosotros.html" class="nav__item">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+<!--------------------------------------------------------    Main    ------------------------------------------------------------->
+
+<!--ACA PODRIA HACER COMO UNA SECCION CON NOTICIAS Y ARTICULOS DE INTERES PARA BARTENDERS, COMO SE ESTRUCTURA GENERALMENTE UN TRAGO,
+FESTIVALES Y DIAS, PROMOCIONES EN COMERCIOS/ECOMMERCES, ENTRE OTROS-->
+        <main class="main main--index">
+            <h1 class="main__titulo main__titulo--index">Ghiaccio, il migliore amico del barista</h1>
+            <p class="main__parrafo main__parrafo--index">
+                Nosotros te tenemos cubierto. Un solo click, cualquier receta lista para la prepares.
+            </p>
+        </main>
+<!--------------------------------------------------------    Aside    ------------------------------------------------------------->
+<!-- NO SE QUE TAN CORRECTO ES ESTE ASIDE, ME PARECE MEJOR EN RECETAS POR SU CONTENIDO. PUBLICIDAD DE CONTENIDO DE BARTENDER TAMBIEN, U OTRO
+TIPO DE INFORMACION RELACIONADA -->
+        <aside class=aside>
+            <div class="aside__cover">
+                <h2 class="aside__titulo">Nuestras Sugerencias</h2>
+            </div>
+            <div class="aside__content">
+                <ul class="aside__father">
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/bloodymary.jpg" alt="sugerencia_bloody_mary"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/caipirinha.jpg" alt="sugerencia_caipirinha"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/coctel-negroni.jpg" alt="sugerencia_negroni"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/cuba-libre.jpg" alt="sugerencia_cuba_libre"></a></li>
+                </ul>
+                <ul class="aside__father">
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/daiquiri.jpg" alt="sugerencia_daiquiri"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/fernet.jpg" alt="sugerencia_fernet"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/cafeirlandes.jpg"alt="sugerencia_cafe_irlandes"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/long-island.jpg" alt="sugerencia_long_island"></a></li>
+                </ul>
+                <ul class="aside__father">
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/manhattan.jpg" alt="sugerencia_manhattan"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/margarita.jpg" alt="sugerencia_margarita"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/martini.jpg" alt="sugerencia_martini"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/mojito.jpg" alt="sugerencia_mojito"></a></li>
+                </ul>
+                <ul class="aside__father">
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/moscowmule.jpg" alt="sugerencia_moscow_mule"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/oldfashioned.jpg" alt="sugerencia_old_fashioned"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/piñacolada.jpg" alt="sugerencia_piña_colada"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/piscopunch.jpg" alt="sugerencia_pisco_punch"></a></li>
+                </ul>
+                <ul class="aside__father">
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/Tom-Collins-2.jpg"alt="sugerencia_tom_collins"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/whisketsour.jpg" alt="sugerencia_whiskey_sour"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/whiskeysmash.jpg" alt="sugerencia_whiskey_smash"></a></li>
+                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/whiterussian.jpg" alt="sugerencia_white_russian"></a></li>
+                </ul>
+
+            </div>    
+        </aside>
+<!--------------------------------------------------------    Footer    ------------------------------------------------------------->
+        <footer class="footer">
+            <ul class="footer_socialNetworks">
+                <li><i><a href="https://web.whatsapp.com/" class="fab fa-whatsapp fa-lg"></a></i></li>
+                <li><i><a href="https://www.instagram.com/" class="fab fa-instagram"></a></a></li>
+                <li><i><a href="https://www.facebook.com/" class="fab fa-facebook"></i></a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Ghiaccio, il migliore amico del barista</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nostrum voluptates, ad dignissimos ipsam
-            repellat molestiae accusantium nulla consequuntur ipsa odio magni vitae? Fugit perspiciatis fuga deleniti
-            tenetur ratione ipsum.
-        </p>
-        <img src="assets/img/cocktail.jpg">
-        <iframe width="1180" height="664" src="https://www.youtube.com/embed/IRua6QGP-Ow" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </main>
-    <aside>
-        <h2>¿Te faltan ingredientes?</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.23050065644!2d-64.26438364404248!3d-31.39928763608521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1638912932695!5m2!1ses!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <h2>Sugerencias de Ghiaccio</h2>
-        <ul>
-            <li>Una sugerencia dulce</li>
-            <p>Sugerencia dulce: Explicacion sugerencia dulce.</p>
-            <li>Una sugerencia amarga</li>
-            <p>Sugerencia amarga: Explicacion sugerencia amarga.</p>
-            <li>Una sugerencia tropical</li>
-            <p>Sugerencia tropical: Explicacion sugerencia tropical.</p>
-            <li>Una sugerencia clasica</li>
-            <p>Sugerencia clasica: Explicacion sugerencia clasica.</p>
-        </ul>
-    </aside>
-    <footer>
-        <p>© 2021, Ghiaccio Inc.</p>
-    </footer>
+            <p class="footer_footerText">© 2021, Ghiaccio Inc.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
