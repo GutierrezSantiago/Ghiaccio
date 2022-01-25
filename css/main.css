@@ -51,16 +51,36 @@
    margin-left: 1vh;
 }
 
+
+/*Probe de varias maneras y revise en internet y la clase y no lo pude hacer funcionar*/
+.header__icon:hover{
+   animation: tipsyNegroni 4s;
+}
+
+@keyframes tipsyNegroni{
+   0%{translate: 2px, 5px;
+      rotate: 15deg;}
+   50%{rotate: -30deg;
+       translate: -4px, -3px;}
+   100%{rotate: 15deg;
+        translate: 2px, 3px;}
+
+}
+
 .nav ul{
    display: inline-flex;
    list-style-type: none;
    align-items: center;
 }
 
+.nav ul li{
+   transition: all 0.25s ease ;
+   border-radius: 7%;
+}
+
 .nav__item{
    padding: 1.95vh;
    margin: 1vh;
-
    text-decoration: none;
    font-size: 2vh;
    color: #241B19;
@@ -72,6 +92,8 @@
 
 .nav__item--active{
    background-color: #C5B1AA;
+   border-radius: 7%;
+   transition: all 0.15 ease ;
 }
 
 .nav ul li:hover{
