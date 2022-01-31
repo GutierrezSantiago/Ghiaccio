@@ -58,12 +58,12 @@
 }
 
 @keyframes tipsyNegroni{
-   0%{translate: 2px, 5px;
+   0% {translate: 2px 5px;
       rotate: 15deg;}
-   50%{rotate: -30deg;
-       translate: -4px, -3px;}
-   100%{rotate: 15deg;
-        translate: 2px, 3px;}
+   50% {rotate: -30deg;
+       translate: -4px -3px;}
+   100% {rotate: 15deg;
+        translate: 2px 3px;}
 
 }
 
