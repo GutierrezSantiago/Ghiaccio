@@ -7,7 +7,7 @@
 .grid {
    display: grid; 
    grid-template-columns: 1fr 1fr 1fr 1fr; 
-   grid-template-rows: 0.63fr 1fr 1fr 1fr 1fr 1fr 0.6fr; 
+   grid-template-rows: 0.63fr 1fr 1fr 1fr 1fr 1fr 0.3fr; 
    gap: 0px 0px; 
    grid-template-areas: 
      "header header header header"
@@ -36,7 +36,7 @@
 
 .header{
    grid-area: header;
-   background-color: #CDBCB6;
+   background-color: #090A0B;
    height: 10vh;
    width: 100vw;
    display: inline-flex;
@@ -47,62 +47,39 @@
 .header__icon {
    width: 7vh;
    height: 7vh;
-   margin-right: 2vh;
-   margin-left: 1vh;
+   margin-left: -18px;
+   margin-right: -0.2%;
 }
 
 
-/*Probe de varias maneras y revise en internet y la clase y no lo pude hacer funcionar*/
 .header__icon:hover{
-   animation: tipsyNegroni 4s;
+   animation: tipsy 1.8s ease-in-out;
 }
 
-@keyframes tipsyNegroni{
-   0% {translate: 2px 5px;
-      rotate: 15deg;}
-   50% {rotate: -30deg;
-       translate: -4px -3px;}
-   100% {rotate: 15deg;
-        translate: 2px 3px;}
+@keyframes tipsy{
+   0% {transform: translate(5px, 5px);}
+   16% {transform: rotate(14deg);}
+   32% {transform: rotate(-13deg);}
+   48% {transform: translate(-3px, -3px);}
+   64% {transform: rotate(-15deg);}
+   80% {transform: rotate(16deg);}
+   95% {transform: translate(2px, 3px);}
+   100% {transform: translate(-4px,-5);}
+
 
 }
 
-.nav ul{
-   display: inline-flex;
-   list-style-type: none;
-   align-items: center;
-}
-
-.nav ul li{
-   transition: all 0.25s ease ;
-   border-radius: 7%;
-}
-
-.nav__item{
-   padding: 1.95vh;
-   margin: 1vh;
+.nav-link{
    text-decoration: none;
-   font-size: 2vh;
-   color: #241B19;
+   font-size: 1vw;
+   font-weight: bolder;
    white-space: nowrap;
    font-family: 'Josefin Sans', sans-serif;
-
-
+   color: white;
 }
 
-.nav__item--active{
-   background-color: #C5B1AA;
-   border-radius: 7%;
-   transition: all 0.15 ease ;
-}
-
-.nav ul li:hover{
-   background-color: #C5B1AA ;
-   padding-top: 2vh;
-   padding-bottom: 2vh;
-   transform: scale(1.1);
-   font-family: 'Josefin Sans', sans-serif;
-   font-weight: bold;
+.nav-link:hover{
+   color: #931621;
 }
 
 
@@ -210,7 +187,7 @@
 }
 .aside{
    grid-area: aside;
-   background-color: rgb(255, 255, 255);
+   background-color: #240508;
    width: 30vw;
    height: 80vh;
    flex-direction: column;
@@ -241,17 +218,18 @@
 .aside__content{
    display: flex;
    flex-direction: column;
-   justify-content: space-evenly;
+   justify-content: space-between;
    height: 100%;
    width: 100%;
-   padding: 4% 2%;
+   padding-top: 4.8%;
+   margin-left: -3.5%;
    flex-wrap: nowrap;
 
 }
 
 .aside__image{
-   width: 6.5vw;
-   height: 6.5vw;
+   width: 90px;
+   height: 90px;
 
 }
 
@@ -262,7 +240,7 @@
 
 .aside__father{
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
    height: 100%;
    width: 100%;
    list-style: none;
@@ -286,15 +264,10 @@
 }
 .footer{
    grid-area: footer;
-   background-color: black ;
+   background-color: #090A0B ;
    width: 100vw;
    height: 10vh;
    padding: 1vh;
-   /*margin-top: -45px;
-   margin-left: -10px;
-   margin-right: -10px;
-   padding-bottom: 10px;
-   padding-bottom: -10px;*/
 
 }
 
@@ -307,6 +280,7 @@
 .footer_socialNetworks{
    display: flex;
    justify-content: center;
+   list-style: none;
 }
 
 .footer_socialNetworks li i a{
@@ -323,8 +297,7 @@
    font-family: 'Josefin Sans', sans-serif;
    padding-left: 20px;
    padding-right: 20px;
-   padding-bottom: 20px;
-   margin-top: -20px;
+   margin-top: -3%;
 
 }
 
