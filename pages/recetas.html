@@ -19,25 +19,55 @@
 <!--------------------------------------------------------    Header    ------------------------------------------------------------->
     <div class="grid">
         <header class="header">
-            <a href="../index.html"><img src="../assets/img/Icon.ico" class="header__icon" href="index.html"></a>
-            <nav class="nav">
-                <ul>
-                    <li><a href="../index.html" class="nav__item">Inicio</a></li>
-                    <li><a href="recetas.html" class="nav__item nav__item--active">Recetas</a></li>
-                    <li><a href="mis_recetas.html" class="nav__item">Mis Recetas</a></li>
-                    <li><a href="contacto.html" class="nav__item">Contacto</a></li>
-                    <li><a href="sobre_nosotros.html" class="nav__item">Sobre nosotros</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg container-fluid">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html"><img src="../assets/img/Icon.ico" class="header__icon"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recetario
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./recetas.html">Cocteles</a></li>
+                                    <li><a class="dropdown-item" href="./mis_recetas.html">Mis cocteles</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse nav__searchLogin" id="navbarNavDropdown">
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+                    </form>
+                    <div class="text-end d-flex">
+                        <button type="button" class="btn text-nowrap header__btn">Iniciar sesion</button>
+                        <button type="button" class="btn header__btn">Registrarse</button>
+                    </div>
+                </div>
             </nav>
+
         </header>
 <!--------------------------------------------------------    Main    ------------------------------------------------------------->
         <main class="main scroll">
-            <h1 class="main__titulo">Recetas<h1>
+            <h1 class="main__titulo">Cocteles<h1>
             <p class="main__parrafo main__parrafo--light">
-                Bienvenido a tu repositorio Ghiaccio. Aqui podras encontrar todas las recetas que hayas subido, tanto publicas como privadas.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat dolores ullam esse dolorem autem tempora at sunt 
-                similique perspiciatis!
-            </p>
+                Bienvenido al recetario de cocteles de Ghiaccio.</p>
             <section class="main__section">
                 <h2 class="main__subtitulo">Ver listado de recetas</h2>
                 <article>
@@ -86,39 +116,36 @@
         </main>
 <!--------------------------------------------------------    Aside    ------------------------------------------------------------->
         <aside class=aside>
-            <div class="aside__cover">
-                <h2 class="aside__titulo">Nuestras Sugerencias</h2>
-            </div>
             <div class="aside__content">
                 <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/bloodymary.jpg" alt="sugerencia_bloody_mary"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/caipirinha.jpg" alt="sugerencia_caipirinha"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/coctel-negroni.jpg" alt="sugerencia_negroni"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/cuba-libre.jpg" alt="sugerencia_cuba_libre"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/bloodymary.jpg" alt="sugerencia_bloody_mary"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/caipirinha.jpg" alt="sugerencia_caipirinha"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/coctel-negroni.jpg" alt="sugerencia_negroni"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/cuba-libre.jpg" alt="sugerencia_cuba_libre"></a></li>
                 </ul>
                 <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/daiquiri.jpg" alt="sugerencia_daiquiri"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/fernet.jpg" alt="sugerencia_fernet"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/cafeirlandes.jpg"alt="sugerencia_cafe_irlandes"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/long-island.jpg" alt="sugerencia_long_island"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/daiquiri.jpg" alt="sugerencia_daiquiri"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/fernet.jpg" alt="sugerencia_fernet"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/cafeirlandes.jpg"alt="sugerencia_cafe_irlandes"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/long-island.jpg" alt="sugerencia_long_island"></a></li>
                 </ul>
                 <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/manhattan.jpg" alt="sugerencia_manhattan"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/margarita.jpg" alt="sugerencia_margarita"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/martini.jpg" alt="sugerencia_martini"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/mojito.jpg" alt="sugerencia_mojito"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/manhattan.jpg" alt="sugerencia_manhattan"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/margarita.jpg" alt="sugerencia_margarita"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/martini.jpg" alt="sugerencia_martini"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/mojito.jpg" alt="sugerencia_mojito"></a></li>
                 </ul>
                 <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/moscowmule.jpg" alt="sugerencia_moscow_mule"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/oldfashioned.jpg" alt="sugerencia_old_fashioned"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/piñacolada.jpg" alt="sugerencia_piña_colada"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/piscopunch.jpg" alt="sugerencia_pisco_punch"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/moscowmule.jpg" alt="sugerencia_moscow_mule"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/oldfashioned.jpg" alt="sugerencia_old_fashioned"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/piñacolada.jpg" alt="sugerencia_piña_colada"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/piscopunch.jpg" alt="sugerencia_pisco_punch"></a></li>
                 </ul>
                 <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/Tom-Collins-2.jpg"alt="sugerencia_tom_collins"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/whisketsour.jpg" alt="sugerencia_whiskey_sour"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/whiskeysmash.jpg" alt="sugerencia_whiskey_smash"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/whiterussian.jpg" alt="sugerencia_white_russian"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/Tom-Collins-2.jpg"alt="sugerencia_tom_collins"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/whisketsour.jpg" alt="sugerencia_whiskey_sour"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/whiskeysmash.jpg" alt="sugerencia_whiskey_smash"></a></li>
+                    <li><a href="./recetas.html"><img class="aside__image" src="../assets/img/aside/whiterussian.jpg" alt="sugerencia_white_russian"></a></li>
                 </ul>
 
             </div>    

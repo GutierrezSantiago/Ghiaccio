@@ -22,30 +22,8 @@
     <!--------------------------------------------------------    Header    ------------------------------------------------------------->
     <div class="grid">
         <header class="header">
-            <!--<a href="index.html"><img src="assets/img/Icon.ico" class="header__icon"></a>
-            <nav class="navbar navbar-expand-lg">
-                    <ul>
-                        <li><a href="index.html" class="nav__item nav__item--active">Inicio</a></li>
-                        <li class="nav__item dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                Recetario
-                              </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a href="pages/recetas.html" class="nav__item dropdown-item">Recetas</a></li>
-                                <li><a href="pages/mis_recetas.html" class="nav__item dropdown-item">Mis Recetas</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="pages/contacto.html" class="nav__item">Contacto</a></li>
-                        <li><a href="pages/sobre_nosotros.html" class="nav__item">Sobre nosotros</a></li>
-                    </ul>
-            </nav>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>-->
-
             <nav class="navbar navbar-expand-lg container-fluid">
-                <div class="container-fluid">
+                <div class="container">
                     <a class="navbar-brand" href="./index.html"><img src="assets/img/Icon.ico" class="header__icon"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -76,12 +54,14 @@
                         </ul>
                     </div>
                 </div>
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                    <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
-                </form>
-                <div class="text-end d-flex">
-                    <button type="button" class="btn text-nowrap">Iniciar sesion</button>
-                    <button type="button" class="btn">Registrarse</button>
+                <div class="collapse navbar-collapse nav__searchLogin" id="navbarNavDropdown">
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+                    </form>
+                    <div class="text-end d-flex">
+                        <button type="button" class="btn text-nowrap header__btn">Iniciar sesion</button>
+                        <button type="button" class="btn header__btn">Registrarse</button>
+                    </div>
                 </div>
             </nav>
 

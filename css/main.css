@@ -56,6 +56,11 @@
    animation: tipsy 1.8s ease-in-out;
 }
 
+
+.nav__searchLogin{
+   justify-content: right;
+}
+
 @keyframes tipsy{
    0% {transform: translate(5px, 5px);}
    16% {transform: rotate(14deg);}
@@ -82,10 +87,32 @@
    color: #931621;
 }
 
+.dropdown-menu{
+   background-color: #DFE2E1;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: bolder;
+   font-size: 1vw;
+}
+.dropdown-item:hover{
+   background-color: #a2a7a550;
 
+}
+.header__btn{
+   border: #A2A7A5 solid 1px;
+   margin: 4px;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: bolder;
+   color: #A2A7A5;
+}
+
+.header__btn:hover{
+   color: #090A0B;
+   background-color: #931621;
+   border-color: #090A0B;
+}
 .main{
    grid-area: main;
-   background-color: #EEE3D3;
+   background-color: #A2A7A5;
    width: 70vw;
    height: 80vh;
    padding: 5vh;
@@ -187,7 +214,7 @@
 }
 .aside{
    grid-area: aside;
-   background-color: #240508;
+   background-color: #1D201F;
    width: 30vw;
    height: 80vh;
    flex-direction: column;
@@ -230,12 +257,13 @@
 .aside__image{
    width: 90px;
    height: 90px;
+   transition: ease-in-out 1s;
 
 }
 
 .aside__image:hover{
    transform: scale(1.2);
-   border: 2px solid white;   
+   border: 2px solid #DFE2E1;   
 }
 
 .aside__father{
