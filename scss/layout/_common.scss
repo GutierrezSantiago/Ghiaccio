@@ -1,0 +1,97 @@
+.main{
+    grid-area: main;
+    background-color: $silver;
+    width: 70vw;
+    height: 80vh;
+    padding: 5vh;
+        &--index{
+            background-image: url(https://finde.latercera.com/wp-content/uploads/2018/08/C6A7449.jpg);
+            background-color: rgb(50, 50, 50);
+            background-blend-mode: soft-light;
+            background-repeat: no-repeat; 
+            background-size: cover;
+        }
+        &--noAside{
+            margin-bottom: -500px;
+            margin-right: -500px;
+        }
+        &__titulo{
+            color: $dark-brown;
+            font-size: 5vh;
+            font-family: $base-font;
+            font-weight: bolder;
+            margin-top: -2vh;
+                &--index{
+                    color: $white;
+                }
+        }
+        &__subtitulo{
+            color: $dark-brown;
+            font-size: 3vh;
+            font-family: $base-font;
+                &--article{
+                    font-size: 2vh;
+                }
+        }
+        &__parrafo{
+            color: $dark-brown;
+            font-size: 3vh;
+            padding: 1vh 1vh 0vh 1vh;
+            font-family: $base-font;
+                &--index{
+                    color: $white;
+                }
+                &--noAside{
+                    margin-right: -380px;
+                }
+                &--light{
+                    font-weight: lighter;
+                }
+                &--input{
+                    font-size: 20px;
+                }
+        }
+        &__input{
+            font-family: $base-font;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        &__image{
+            width: 430px;
+            height: 250px;
+            position: relative;
+            margin-right: 10px;
+            margin-top: 0px;
+                &:hover{
+                    color: rgba(0, 0, 0, 0.788);
+                }
+                &--noAside{
+                    margin-left: 400px;
+                }
+        }
+        &__video{
+            width: 430px;
+            height: 250px;
+            position: relative;
+        }
+        &__listItem{
+            font-family: $base-font;
+            font-size: 25px;
+            font-weight: lighter;
+        }
+
+}
+
+@media (max-width: 768px){
+    .main{
+        width: 100vw;
+        height: 53vh;
+    }
+}
+
+@media (max-width: 420px){
+    .main{
+        height: 50vh;
+    }
+}

@@ -1,0 +1,108 @@
+.aside{
+    /*Posibilidad de descartar parrafo item y comentario y 
+    poner en aside la font family, definir en entrega final 
+    (pueden ser de uso mas adelante)*/
+    grid-area: aside;
+    background-color: $coal;
+    width: 30vw;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    background-blend-mode: darken;
+        /*Seccion que no hace nada pero voy a seguir buscando una manera 
+        de implementar, capaz sin js es complicado*/
+        &__cover{
+            width: 100%;
+            height: 100%;
+            display: block;
+                &:hover{
+                    display: none;
+                    transition: all 2s;
+                }
+        }
+        &__titulo{
+            font-family: $base-font;
+            color: $white;
+            font-size: 3vh;
+            text-align: center;
+            padding: 3vh;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            padding-top: 4.8%;
+            margin-left: -3.5%;
+            flex-wrap: nowrap;
+        }
+        &__image{
+            width: 90px;
+            height: 90px;
+            transition: ease-in-out 1s;
+                &:hover{
+                    transform: scale(1.2);
+                    border: 2px solid $platinum;
+                }
+        }
+        &__father{
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        &__parrafo{
+            font-family: $base-font;
+        }
+        &__subtitulo{
+            font-size: x-large;
+            font-family: $base-font;
+        }
+        &__item{
+            font-family: $base-font;
+        }
+        &__comentario{
+            font-family: $base-font;
+        }
+ }
+
+@media (max-width: 768px){
+    .aside{
+        width: 100vw;
+        height: 18vh;
+        padding: 0vh 0vh 0vh 1vh;
+        overflow: scroll;
+        &__content{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        &__father{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        &__image{
+            width: 12vh;
+            height: 12vh;
+            margin: 0vh 2vw;
+        }
+    }
+}
+
+@media (max-width: 420px){
+    .aside{
+        padding-top: 1.8vh;
+        height: 15vh;
+            &__content{
+                margin: 0vh 1vw;
+            }
+            &__father{
+                margin: 0vh 1.8vw;
+            }
+    }
+}
+

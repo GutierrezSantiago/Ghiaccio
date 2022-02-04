@@ -1,0 +1,83 @@
+.header{
+    grid-area: header;
+    background-color: $black;
+    height: 10vh;
+    width: 100vw;
+    display: inline-flex;
+    align-items: center;
+    padding: 1vh;
+        &__icon{
+            width: 7vh;
+            height: 7vh;
+            margin-left: -18px;
+            margin-right: -0.2%;
+                &:hover{
+                    animation: tipsy 1.8s ease-in-out;
+                }
+        }
+        &__btn{
+            border: $silver solid 1px;
+            margin: 4px;
+            font-family: $base-font;
+            font-weight: bolder;
+            color: $silver;
+                &:hover{
+                    color: $black;
+                    background-color: $wine;
+                    border-color: $black;
+                }
+        }
+ }
+
+ .nav{
+     &__searchLogin{
+         justify-content: right;
+     }
+     &-link{
+        text-decoration: none;
+        font-size: 1vw;
+        font-weight: bolder;
+        white-space: nowrap;
+        font-family: $base-font;
+        color: $white;
+            &:hover{
+                color: $wine;
+            }
+     }
+ }
+
+ .dropdown{
+        &-menu{
+            background-color: $platinum;
+            font-family: $base-font;
+            font-weight: bolder;
+            font-size: 1vw;
+        }
+        &-item:hover{
+            background-color: $steel;
+        }
+ }
+
+@media (max-width: 768px){
+    .header{
+        height: 12vh;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 420px){
+    .header{
+        height: 20vh;
+        flex-direction: column;
+  
+    }
+  
+     .nav ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+            & li{
+                padding: 1.5vh 0vh;
+            }
+    }
+}

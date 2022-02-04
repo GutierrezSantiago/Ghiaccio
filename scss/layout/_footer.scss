@@ -1,0 +1,48 @@
+.footer{
+    grid-area: footer;
+    background-color: $black ;
+    width: 100vw;
+    height: 10vh;
+    padding: 1vh;
+        &--noAside{
+            margin-top: 50px;
+            margin-left: -58px;
+            margin-right: -390px;
+        }
+        /*Hay guion bajo simple, deberia haber doble, corregir luego*/
+        &_socialNetworks{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+                & li i a{
+                    display: inline-block;
+                    text-decoration: none;
+                    transition: transform 0.4s;
+                    color: $white;
+                    padding: 20px;
+                    font-size: 1.5rem;
+                        &:hover{
+                            transform: scale(1.25);
+                        }
+                }
+        }
+        &_footerText{
+            color: $white;
+            font-family: $base-font;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: -3%;
+        }
+}
+
+@media (max-width: 768px){
+    .footer{
+        height: 17vh;
+    }
+}
+
+@media (max-width: 420px){
+    .footer{
+        height: 15vh;
+    }
+}
