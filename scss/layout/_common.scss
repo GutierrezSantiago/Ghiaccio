@@ -17,9 +17,7 @@
         }
         &__titulo{
             color: $dark-brown;
-            font-size: 5vh;
-            font-family: $base-font;
-            font-weight: bolder;
+            @include font(5vh);
             margin-top: -2vh;
                 &--index{
                     color: $white;
@@ -27,17 +25,15 @@
         }
         &__subtitulo{
             color: $dark-brown;
-            font-size: 3vh;
-            font-family: $base-font;
+            @include font(3vh);
                 &--article{
                     font-size: 2vh;
                 }
         }
         &__parrafo{
             color: $dark-brown;
-            font-size: 3vh;
+            @include font(3vh);
             padding: 1vh 1vh 0vh 1vh;
-            font-family: $base-font;
                 &--index{
                     color: $white;
                 }
@@ -52,8 +48,7 @@
                 }
         }
         &__input{
-            font-family: $base-font;
-            font-size: 18px;
+            @include font(map-get($font-size, medium));
             padding: 5px;
         }
 
@@ -75,10 +70,9 @@
             height: 250px;
             position: relative;
         }
+        // MAPA
         &__listItem{
-            font-family: $base-font;
-            font-size: 25px;
-            font-weight: lighter;
+            @include font(map-get($font-size, medium));
         }
 
 }

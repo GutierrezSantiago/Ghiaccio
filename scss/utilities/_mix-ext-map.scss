@@ -1,0 +1,13 @@
+@mixin font($size){
+    font-family: $base-font;
+    font-weight: bolder;
+    font-size: $size;
+}
+
+$font-size: (
+    smallest: 0.25rem ,
+    small: 0.5rem,
+    medium: 1rem,
+    big: 2rem,
+    biggest: 2.5rem 
+)
