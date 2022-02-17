@@ -21,16 +21,49 @@
 <!--------------------------------------------------------    Header    ------------------------------------------------------------->
     <div class="grid grid--noAside">
         <header class="header">
-            <a href="../index.html"><img src="../assets/img/Icon.ico" class="header__icon" href="index.html"></a>
-            <nav class="nav">
-                <ul>
-                    <li><a href="../index.html" class="nav__item">Inicio</a></li>
-                    <li><a href="recetas.html" class="nav__item">Recetas</a></li>
-                    <li><a href="mis_recetas.html" class="nav__item">Mis Recetas</a></li>
-                    <li><a href="contacto.html" class="nav__item nav__item--active">Contacto</a></li>
-                    <li><a href="sobre_nosotros.html" class="nav__item">Sobre nosotros</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg container-fluid">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html"><img src="../assets/img/Icon.ico" class="header__icon"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recetario
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./recetas.html">Cocteles</a></li>
+                                    <li><a class="dropdown-item" href="./mis_recetas.html">Mis cocteles</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a class="nav-link" href="./sobre_nosotros.html">Sobre nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse nav__searchLogin" id="navbarNavDropdown">
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+                    </form>
+                    <div class="text-end d-flex">
+                        <button type="button" class="btn text-nowrap header__btn">Iniciar sesion</button>
+                        <button type="button" class="btn header__btn">Registrarse</button>
+                    </div>
+                </div>
             </nav>
+
         </header>
     <!--------------------------------------------------------    Main    ------------------------------------------------------------->
         <main class="main">

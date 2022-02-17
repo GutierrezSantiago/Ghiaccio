@@ -63,6 +63,7 @@
         height: 12vh;
         width: 100vw;
     }
+    
 }
 
 @media (max-width: 420px){
@@ -71,6 +72,7 @@
         flex-direction: column;
   
     }
+
   
      .nav ul{
         flex-direction: row;
@@ -80,4 +82,6 @@
                 padding: 1.5vh 0vh;
             }
     }
+
+    
 }
