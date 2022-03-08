@@ -11,31 +11,22 @@
             height: 7vh;
             margin-left: -18px;
             margin-right: -0.2%;
+            margin: auto;
                 &:hover{
                     animation: tipsy 1.8s ease-in-out;
                 }
         }
-        &__btn{
-            border: $silver solid 1px;
-            margin: 4px;
-            font-family: $base-font;
-            font-weight: bolder;
-            color: $silver;
-                &:hover{
-                    color: $black;
-                    background-color: $wine;
-                    border-color: $black;
-                }
-        }
+        
  }
 
  .nav{
+     
      &__searchLogin{
          justify-content: right;
      }
      &-link{
         text-decoration: none;
-        font-size: 1vw;
+        font-size: 0.9rem;
         font-weight: bolder;
         white-space: nowrap;
         font-family: $base-font;
@@ -51,12 +42,25 @@
             background-color: $platinum;
             font-family: $base-font;
             font-weight: bolder;
-            font-size: 1vw;
+            font-size: 0.9rem;
         }
         &-item:hover{
             background-color: $steel;
         }
  }
+
+
+ .container-custom{ 
+     width: auto;
+ }
+
+ .search{
+     width: 25.5vw;
+ }
+ 
+ 
+
+
 
 @media (max-width: 768px){
     .header{
@@ -64,11 +68,55 @@
         width: 100vw;
     }
     
+    .collapsable{
+        background-color: $black;
+        border-radius: 2%;
+    }
+
+    .dropdown{
+        &-left{
+            margin-right: 200px;
+        }
+        &-right{}
+    }
+
+    .o0{
+        order: 0;
+    }
+
+    .o1{
+        order: 1;
+    }
+
+    .o2{
+        order: 2;
+    }
+    
+    .button{
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        padding: 3px;
+    }
+    .container-custom{ 
+        width: 100%;
+    }
+
+    .search{
+        width: 90vw;
+        margin-right: 10px;
+        margin: auto;
+    }
+
 }
 
 @media (max-width: 420px){
     .header{
-        height: 20vh;
+        height: 10vh;
         flex-direction: column;
   
     }
@@ -83,5 +131,26 @@
             }
     }
 
-    
+    .search{
+        width: 70vw;
+        margin-right: 10px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .collapsable{
+        background-color: $black;
+        border-radius: 2%;
+    }
+}
+
+@media (min-width: 768){
+    .div-width0{
+        width: auto;
+   
+   }
+
+   
+
+
 }

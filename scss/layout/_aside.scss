@@ -3,23 +3,17 @@
     poner en aside la font family, definir en entrega final 
     (pueden ser de uso mas adelante)*/
     grid-area: aside;
-    background-color: $coal;
+    background-color: $dark-brown;
     width: 30vw;
     height: 80vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background-blend-mode: darken;
+    background-blend-mode: soft-light;
+    background-size: 400px;
+    background-image: url(https://medahuman.com/wp-content/uploads/2020/07/cocktail-collage-copy-1340x754.jpg);
         /*Seccion que no hace nada pero voy a seguir buscando una manera 
         de implementar, capaz sin js es complicado*/
-        &__cover{
-            width: 100%;
-            height: 100%;
-            display: block;
-                &:hover{
-                    display: none;
-                    transition: all 2s;
-                }
-        }
         &__titulo{
             font-family: $base-font;
             color: $white;
@@ -31,11 +25,18 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 100%;
-            width: 100%;
+            height: 60%;
+            width: 80%;
             padding-top: 4.8%;
-            margin-left: -3.5%;
+            margin: auto;
+            border-radius: 2.5%;
+            border: 3px solid $dark-brown;
             flex-wrap: nowrap;
+            background-color: $brown;
+            background-blend-mode: soft-light;
+            background-size: cover;
+            background-image: url("/assets/img/bg-login.png");
+            
         }
         &__image{
             width: 90px;
@@ -45,6 +46,7 @@
                     transform: scale(1.2);
                     border: 2px solid $platinum;
                 }
+                
         }
         &__father{
             display: flex;
@@ -67,7 +69,31 @@
         &__comentario{
             font-family: $base-font;
         }
- }
+        &__btn{
+            border: $hay solid 1px;
+            margin: 4px;
+            font-family: $base-font;
+            font-weight: bolder;
+            color: $dark-brown;
+            width: 6.8rem;
+            height: 3rem; 
+            margin: 10px;
+            background-color: $hay;
+                &:hover{
+                    color: $gold-hay;
+                    background-color: $dark-brown;
+                    border-color: $light-brown;
+                    box-shadow: $dark-brown;
+                }
+        }}
+
+
+ .input-login{
+     width: 80%;
+     margin: 0px auto;
+     font-family: $base-font;
+     border: 1px solid $dark-brown; 
+    }
 
 @media (max-width: 768px){
     .aside{
@@ -92,6 +118,7 @@
         }
     }
 }
+
 
 @media (max-width: 420px){
     .aside{

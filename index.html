@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="ghiacco coctel recetario bartender trago cocktail drink alcohol cocteles cocteleria">
-    <meta name="description" content="Acompañamos a bartenders ofrenciendoles un recetario de cocteles de todo tipo. Ofrecemos la posibildad de incluir sus propias recetas y compartirlas con el resto de usuarios.">
+    <meta name="description"
+        content="Acompañamos a bartenders ofrenciendoles un recetario de cocteles de todo tipo. Ofrecemos la posibildad de incluir sus propias recetas y compartirlas con el resto de usuarios.">
     <link rel="shortcut icon" href="./assets/img/Icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,15 +25,27 @@
     <!--------------------------------------------------------    Header    ------------------------------------------------------------->
     <div class="grid">
         <header class="header">
-            <nav class="navbar navbar-dark navbar-expand-lg container-fluid">
-                <div class="container">
-                    <a class="navbar-brand" href="./index.html"><img src="assets/img/Icon.ico" class="header__icon"></a>
-                    <button class="navbar-toggler toggle-button" type="button" data-bs-toggle="collapse"
+            <nav class="navbar navbar-dark navbar-expand-md container-fluid mt-auto mt-lg-0">
+                <div class="container-fluid container-custom ">
+                    <a class="navbar-brand o1" href="./index.html"><img src="assets/img/Icon.ico"
+                            class="header__icon"></a>
+                    <button class="navbar-toggler toggle-button o0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <button class="navbar-toggler toggle-button o2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSearchDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search button" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="container collapsable">
+                    <div class="collapse navbar-collapse navbar-expand-lg" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
@@ -56,14 +69,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="collapse navbar-collapse nav__searchLogin" id="navbarSearchDropdown">
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
+                <div class="collapse navbar-collapse navbar-expand-md nav__searchLogin collapsable  m-auto"
+                    id="navbarSearchDropdown">
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 search">
+                        <input type="search" class="form-control form-control-dark" placeholder="Buscar..."
+                            aria-label="Search">
                     </form>
-                    <div class="text-end d-flex">
-                        <button type="button" class="btn text-nowrap header__btn">Iniciar sesion</button>
-                        <button type="button" class="btn header__btn">Registrarse</button>
-                    </div>
                 </div>
             </nav>
 
@@ -75,65 +86,27 @@ FESTIVALES Y DIAS, PROMOCIONES EN COMERCIOS/ECOMMERCES, ENTRE OTROS-->
         <main class="main main--index">
             <h1 class="main__titulo main__titulo--index">Ghiaccio, il migliore amico del barista</h1>
             <p class="main__parrafo main__parrafo--index">
-                Nosotros te tenemos cubierto. A un solo click de tener la receta que quieras, lista para que la prepares.
+                Nosotros te tenemos cubierto. A un solo click de tener la receta que quieras, lista para que la
+                prepares.
             </p>
         </main>
         <!--------------------------------------------------------    Aside    ------------------------------------------------------------->
         <!-- NO SE QUE TAN CORRECTO ES ESTE ASIDE, ME PARECE MEJOR EN RECETAS POR SU CONTENIDO. PUBLICIDAD DE CONTENIDO DE BARTENDER TAMBIEN, U OTRO
 TIPO DE INFORMACION RELACIONADA -->
         <aside class=aside>
-            <div class="aside__content">
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/bloodymary.jpg"
-                                alt="sugerencia_bloody_mary"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/caipirinha.jpg"
-                                alt="sugerencia_caipirinha"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image"
-                                src="./assets/img/aside/coctel-negroni.jpg" alt="sugerencia_negroni"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/cuba-libre.jpg"
-                                alt="sugerencia_cuba_libre"></a></li>
-                </ul>
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/daiquiri.jpg"
-                                alt="sugerencia_daiquiri"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/fernet.jpg"
-                                alt="sugerencia_fernet"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image"
-                                src="./assets/img/aside/cafeirlandes.jpg" alt="sugerencia_cafe_irlandes"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image"
-                                src="./assets/img/aside/long-island.jpg" alt="sugerencia_long_island"></a></li>
-                </ul>
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/manhattan.jpg"
-                                alt="sugerencia_manhattan"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/margarita.jpg"
-                                alt="sugerencia_margarita"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/martini.jpg"
-                                alt="sugerencia_martini"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/mojito.jpg"
-                                alt="sugerencia_mojito"></a></li>
-                </ul>
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/moscowmule.jpg"
-                                alt="sugerencia_moscow_mule"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image"
-                                src="./assets/img/aside/oldfashioned.jpg" alt="sugerencia_old_fashioned"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/piñacolada.jpg"
-                                alt="sugerencia_piña_colada"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="./assets/img/aside/piscopunch.jpg"
-                                alt="sugerencia_pisco_punch"></a></li>
-                </ul>
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image"
-                                src="./assets/img/aside/Tom-Collins-2.jpg" alt="sugerencia_tom_collins"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image"
-                                src="./assets/img/aside/whisketsour.jpg" alt="sugerencia_whiskey_sour"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image"
-                                src="./assets/img/aside/whiskeysmash.jpg" alt="sugerencia_whiskey_smash"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image"
-                                src="./assets/img/aside/whiterussian.jpg" alt="sugerencia_white_russian"></a></li>
-                </ul>
-
+            <div class="aside__content container justify-content-center align-items-center">
+                <div class="container">
+                    <div class="input-group mb-3 input-login">
+                        <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      
+                      <div class="input-group mb-3 input-login">
+                        <input type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2">                      </div>
+                </div>
+                <div class="text-end d-flex">
+                    <button type="button" class="btn text-nowrap aside__btn d-block">Iniciar sesion</button>
+                    <button type="button" class="btn aside__btn d-block">Registrarse</button>
+                </div>
             </div>
         </aside>
         <!--------------------------------------------------------    Footer    ------------------------------------------------------------->
@@ -143,7 +116,7 @@ TIPO DE INFORMACION RELACIONADA -->
                 <li><i><a href="https://www.instagram.com/" class="fab fa-instagram"></a></a></li>
                 <li><i><a href="https://www.facebook.com/" class="fab fa-facebook"></i></a></li>
             </ul>
-            <p class="footer_footerText">© 2021, Ghiaccio Inc.</p>
+            <p class="footer_footerText mb-10">© 2021, Ghiaccio Inc.</p>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
