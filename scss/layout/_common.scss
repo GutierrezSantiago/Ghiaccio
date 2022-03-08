@@ -12,8 +12,7 @@
             background-size: cover;
         }
         &--noAside{
-            margin-bottom: -500px;
-            margin-right: -500px;
+            width: 100vw;
         }
         &__titulo{
             color: $dark-brown;
@@ -80,18 +79,27 @@
 @media (max-width: 768px){
     .main{
         width: 100vw;
-        height: 38vh;
+        height: auto;
+        &--noAside{
+            height: 100%;
+        }
     }
 }
 
 @media (max-width: 420px){
     .main{
         height: 38vh;
+        &--noAside{
+            height: 100%;
+        }
     }
 }
 
 @media (max-width: 350px){
     .main{
         height: auto;
+        &--noAside{
+            height: 100%;
+        }
     }
 }

@@ -1,7 +1,7 @@
 .grid {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.63fr 1fr 1fr 1fr 1fr 1fr 0.3fr; 
+    grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr 0.3fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "header header header header"
@@ -33,7 +33,7 @@
       display: grid; 
       grid-auto-columns: 1fr; 
       grid-template-columns: 1fr 1fr 1fr 1fr; 
-      grid-template-rows: 0.2fr 0.5fr 0.5fr 0.3fr 0.3fr 0.7fr; 
+      grid-template-rows: 0.25fr 0.5fr 0.5fr 0.4fr 0.3fr 0.4fr; 
       gap: 0px 0px; 
       grid-template-areas: 
         "header header header header"
@@ -43,7 +43,21 @@
         "aside aside aside aside"
         "footer footer footer footer"; 
       justify-items: center; 
-      align-items: center; 
+      align-items: center;
+      &--noAside {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "header header header header"
+          "main main main main"
+          "main main main main"
+          "main main main main"
+          "main main main main"
+          "main main main main"
+          "footer footer footer footer"; 
+      }
     }
   }
   
@@ -52,7 +66,7 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.2fr 0.7fr 0.6fr 0.2fr 0.2fr 1fr; 
+    grid-template-rows: 0.2fr 0.7fr 0.6fr 0.3fr 0.5fr 0.6fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "header header header header"
@@ -63,6 +77,20 @@
       "footer footer footer footer"; 
     justify-items: center; 
     align-items: center; 
+    &--noAside {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 0.45fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer"; 
+    }
   }
 }
 
@@ -81,6 +109,20 @@
       "aside aside aside aside"
       "footer footer footer footer"; 
     justify-items: center; 
-    align-items: center; 
+    align-items: center;
+    &--noAside {
+      display: grid; 
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 0.25fr 1fr 1fr 1fr 1fr 1fr 0.5fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer"; 
+    }
   }
 }

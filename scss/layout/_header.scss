@@ -21,6 +21,7 @@
 
  .nav{
      margin: auto;
+     align-items: center;
      &__searchLogin{
          justify-content: right;
      }
@@ -39,14 +40,18 @@
 
  .dropdown{
         &-menu{
-            background-color: $platinum;
+            background-color: $black;
             font-family: $base-font;
             font-weight: bolder;
             font-size: 0.9rem;
+            
         }
-        &-item:hover{
+        &-item{
+            color: $white;
+            &:hover{
+            color: $white;
             background-color: $steel;
-        }
+        }}
  }
 
 
@@ -108,9 +113,7 @@
 
 }
 @media(max-width: 992px){
-    .nav{
-        justify-content: flex-start;
-    }
+   
     .header{
         &__icon{
             transform: translate(0px, -10px);
