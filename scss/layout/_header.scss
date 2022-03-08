@@ -20,7 +20,7 @@
  }
 
  .nav{
-     
+     margin: auto;
      &__searchLogin{
          justify-content: right;
      }
@@ -73,12 +73,6 @@
         border-radius: 2%;
     }
 
-    .dropdown{
-        &-left{
-            margin-right: 200px;
-        }
-        &-right{}
-    }
 
     .o0{
         order: 0;
@@ -113,7 +107,16 @@
     }
 
 }
-
+@media(max-width: 992px){
+    .nav{
+        justify-content: flex-start;
+    }
+    .header{
+        &__icon{
+            transform: translate(0px, -10px);
+        }
+    }
+}
 @media (max-width: 420px){
     .header{
         height: 10vh;

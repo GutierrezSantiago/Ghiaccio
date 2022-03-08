@@ -37,12 +37,18 @@
 
 @media (max-width: 768px){
     .footer{
-        height: 17vh;
+        height: 15vh;
     }
 }
 
 @media (max-width: 420px){
     .footer{
-        height: 15vh;
+        height: 20.5vh;
+    }
+}
+
+@media (max-width: 350px){
+    .footer{
+        height: 20vh;
     }
 }

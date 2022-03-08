@@ -74,13 +74,13 @@
             margin: 4px;
             font-family: $base-font;
             font-weight: bolder;
-            color: $dark-brown;
+            color: $hay;
             width: 6.8rem;
             height: 3rem; 
             margin: 10px;
-            background-color: $hay;
+            background-color: $brown;
                 &:hover{
-                    color: $gold-hay;
+                    color: $hay;
                     background-color: $dark-brown;
                     border-color: $light-brown;
                     box-shadow: $dark-brown;
@@ -95,41 +95,56 @@
      border: 1px solid $dark-brown; 
     }
 
+@media (max-width: 1115px){
+    .column{
+        flex-direction: column;
+        width: 80%;
+    }
+    .aside{
+        &__btn{
+            width: 85%;
+        }
+    }
+        
+}
+
 @media (max-width: 768px){
     .aside{
         width: 100vw;
-        height: 18vh;
-        padding: 0vh 0vh 0vh 1vh;
-        overflow: scroll;
+        height: 35vh;
         &__content{
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+            height: 80%;
+            margin: auto;
+
         }
-        &__father{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-        }
-        &__image{
-            width: 12vh;
-            height: 12vh;
-            margin: 0vh 2vw;
-        }
-    }
+
 }
 
 
 @media (max-width: 420px){
     .aside{
-        padding-top: 1.8vh;
-        height: 15vh;
+            height: 40vh;
+            margin: auto;
             &__content{
-                margin: 0vh 1vw;
+                width: 90vw;
             }
-            &__father{
-                margin: 0vh 1.8vw;
-            }
+
+    }
+
+    .input-login{
+        min-width: 160px;
     }
 }
+}
 
+@media (max-width: 350px){
+    .aside{
+        height: 60vh;
+        &__content{
+        flex-direction: column;
+        }
+    }
+}

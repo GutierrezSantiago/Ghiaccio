@@ -65,3 +65,22 @@
     align-items: center; 
   }
 }
+
+@media (max-width: 350px){
+  .grid {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.2fr 0.7fr 0.6fr 0.2fr 0.2fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header header"
+      "main main main main"
+      "main main main main"
+      "aside aside aside aside"
+      "aside aside aside aside"
+      "footer footer footer footer"; 
+    justify-items: center; 
+    align-items: center; 
+  }
+}

@@ -80,12 +80,18 @@
 @media (max-width: 768px){
     .main{
         width: 100vw;
-        height: 53vh;
+        height: 38vh;
     }
 }
 
 @media (max-width: 420px){
     .main{
-        height: 50vh;
+        height: 38vh;
+    }
+}
+
+@media (max-width: 350px){
+    .main{
+        height: auto;
     }
 }

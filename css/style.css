@@ -60,6 +60,17 @@
     justify-items: center;
     align-items: center; } }
 
+@media (max-width: 350px) {
+  .grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.7fr 0.6fr 0.2fr 0.2fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header header header" "main main main main" "main main main main" "aside aside aside aside" "aside aside aside aside" "footer footer footer footer";
+    justify-items: center;
+    align-items: center; } }
+
 .header {
   grid-area: header;
   background-color: #090A0B;
@@ -77,18 +88,19 @@
     .header__icon:hover {
       animation: tipsy 1.8s ease-in-out; }
 
-.nav__searchLogin {
-  justify-content: right; }
-
-.nav-link {
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: bolder;
-  white-space: nowrap;
-  font-family: "Josefin Sans", sans-serif;
-  color: whitesmoke; }
-  .nav-link:hover {
-    color: #931621; }
+.nav {
+  margin: auto; }
+  .nav__searchLogin {
+    justify-content: right; }
+  .nav-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    white-space: nowrap;
+    font-family: "Josefin Sans", sans-serif;
+    color: whitesmoke; }
+    .nav-link:hover {
+      color: #931621; }
 
 .dropdown-menu {
   background-color: #DFE2E1;
@@ -112,8 +124,6 @@
   .collapsable {
     background-color: #090A0B;
     border-radius: 2%; }
-  .dropdown-left {
-    margin-right: 200px; }
   .o0 {
     order: 0; }
   .o1 {
@@ -135,6 +145,12 @@
     width: 90vw;
     margin-right: 10px;
     margin: auto; } }
+
+@media (max-width: 992px) {
+  .nav {
+    justify-content: flex-start; }
+  .header__icon {
+    transform: translate(0px, -10px); } }
 
 @media (max-width: 420px) {
   .header {
@@ -230,11 +246,15 @@
 @media (max-width: 768px) {
   .main {
     width: 100vw;
-    height: 53vh; } }
+    height: 38vh; } }
 
 @media (max-width: 420px) {
   .main {
-    height: 50vh; } }
+    height: 38vh; } }
+
+@media (max-width: 350px) {
+  .main {
+    height: auto; } }
 
 .footer {
   grid-area: footer;
@@ -269,11 +289,15 @@
 
 @media (max-width: 768px) {
   .footer {
-    height: 17vh; } }
+    height: 15vh; } }
 
 @media (max-width: 420px) {
   .footer {
-    height: 15vh; } }
+    height: 20.5vh; } }
+
+@media (max-width: 350px) {
+  .footer {
+    height: 20vh; } }
 
 .aside {
   /*Posibilidad de descartar parrafo item y comentario y 
@@ -340,13 +364,13 @@
     margin: 4px;
     font-family: "Josefin Sans", sans-serif;
     font-weight: bolder;
-    color: #241B19;
+    color: #d8ba8f;
     width: 6.8rem;
     height: 3rem;
     margin: 10px;
-    background-color: #d8ba8f; }
+    background-color: #3c3130; }
     .aside__btn:hover {
-      color: #daab5e;
+      color: #d8ba8f;
       background-color: #241B19;
       border-color: #755a52;
       box-shadow: #241B19; }
@@ -357,30 +381,35 @@
   font-family: "Josefin Sans", sans-serif;
   border: 1px solid #241B19; }
 
+@media (max-width: 1115px) {
+  .column {
+    flex-direction: column;
+    width: 80%; }
+  .aside__btn {
+    width: 85%; } }
+
 @media (max-width: 768px) {
   .aside {
     width: 100vw;
-    height: 18vh;
-    padding: 0vh 0vh 0vh 1vh;
-    overflow: scroll; }
+    height: 35vh; }
     .aside__content {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap; }
-    .aside__father {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap; }
-    .aside__image {
-      width: 12vh;
-      height: 12vh;
-      margin: 0vh 2vw; } }
+      flex-wrap: nowrap;
+      height: 80%;
+      margin: auto; } }
 
-@media (max-width: 420px) {
+@media (max-width: 768px) and (max-width: 420px) {
   .aside {
-    padding-top: 1.8vh;
-    height: 15vh; }
+    height: 40vh;
+    margin: auto; }
     .aside__content {
-      margin: 0vh 1vw; }
-    .aside__father {
-      margin: 0vh 1.8vw; } }
+      width: 90vw; }
+  .input-login {
+    min-width: 160px; } }
+
+@media (max-width: 350px) {
+  .aside {
+    height: 60vh; }
+    .aside__content {
+      flex-direction: column; } }
