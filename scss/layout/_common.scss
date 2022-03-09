@@ -118,8 +118,7 @@
             }
         
             }
-        &__image{
-            width: 80%;
+        
             
         }
         &__form{
@@ -163,8 +162,10 @@
         }
 
         &__image{
-            border-radius: 5%
+            border-radius: 5%;
+            width: 40%;
         }
+
         // MAPA
         &__li{
             list-style: square;
@@ -205,4 +206,4 @@
             height: 100%;
         }
     }
-}}
+}
