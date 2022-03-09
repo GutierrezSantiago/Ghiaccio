@@ -19,7 +19,7 @@
 <!--------------------------------------------------------    Body    ------------------------------------------------------------->
 <body>
 <!--------------------------------------------------------    Header    ------------------------------------------------------------->
-    <div class="grid">
+    <div class="grid grid--noAside">
         <header class="header">
             <nav class="navbar navbar-dark navbar-expand-md container-fluid mt-auto mt-lg-0">
                 <div class="container-fluid container-custom ">
@@ -76,98 +76,23 @@
 
         </header>
 <!--------------------------------------------------------    Main    ------------------------------------------------------------->
-        <main class="main scroll">
-            <h1 class="main__titulo">Mis Recetas<h1>
-            <p class="main__parrafo main__parrafo--light">
-                Bienvenido a tu repositorio Ghiaccio. Aqui podras encontrar todas las recetas que hayas subido, tanto publicas como privadas.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat dolores ullam esse dolorem autem tempora at sunt 
-                similique perspiciatis!
-            </p>
-            <section class="main__section">
-                <h2 class="main__subtitulo">Ver listado de recetas</h2>
-                <article>
-                    <h3 class="main__subtitulo main__subtitulo--article">Receta1</h3>
-                    <p class="main__parrafo main__parrafo--light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dicta exercitationem similique 
-                        dignissimos magnam quo, accusamus nemo qui consequatur numquam minima blanditiis consectetur 
-                        culpa quae architecto sint corporis quos sunt totam. Eius deleniti placeat odio esse, 
-                        reprehenderit molestiae vel provident!
-                    </p>
-                    <ul>
-                        <li class="main__listItem">Ingrediente1</li>
-                        <li class="main__listItem">Ingrediente2</li>
-                        <li class="main__listItem">Ingrediente3</li>
-                        <li class="main__listItem">Ingrediente4</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3 class="main__subtitulo main__subtitulo--article">Receta2</h3>
-                    <p class="main__parrafo main__parrafo--light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dicta exercitationem similique 
-                        dignissimos magnam quo, accusamus nemo qui consequatur numquam minima blanditiis consectetur 
-                        culpa quae architecto sint corporis quos sunt totam. Eius deleniti placeat odio esse, 
-                        reprehenderit molestiae vel provident!
-                    </p>
-                    <ul>
-                        <li class="main__listItem">Ingrediente1</li>
-                        <li class="main__listItem">Ingrediente2</li>
-                        <li class="main__listItem">Ingrediente3</li>
-                        <li class="main__listItem">Ingrediente4</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3 class="main__subtitulo main__subtitulo--article">Receta3</h3>
-                    <p class="main__parrafo main__parrafo--light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dicta exercitationem similique 
-                        dignissimos magnam quo, accusamus nemo qui consequatur numquam minima blanditiis consectetur 
-                        culpa quae architecto sint corporis quos sunt totam. Eius deleniti placeat odio esse, 
-                        reprehenderit molestiae vel provident!
-                    </p>
-                    <ul>
-                        <li class="main__listItem">Ingrediente1</li>
-                        <li class="main__listItem">Ingrediente2</li>
-                        <li class="main__listItem">Ingrediente3</li>
-                        <li class="main__listItem">Ingrediente4</li>
-                    </ul>
-                </article>
-            </section>
-        </main>
-<!--------------------------------------------------------    Aside    ------------------------------------------------------------->
-        <aside class=aside>
-            <div class="aside__cover">
-                <h2 class="aside__titulo">Nuestras Sugerencias</h2>
+<main class="main main--noAside main--recetario main--alert">
+    <div class="container mt-auto h-80 w-100 d-flex flex-column align-items-center justify-content-center">
+        <h1 class="main__titulo main__titulo--recetario">Recetas subidas</h1>
+        <div class="card text-center main__alert main__alert--container w-100 h-100">
+            <div class="card-header main__card--dark main__alert">
+              <p class="main__text main__text--highlight main__alert--text">¿No encuentra sus recetas?</p>
             </div>
-            <div class="aside__content">
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/bloodymary.jpg" alt="sugerencia_bloody_mary"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/caipirinha.jpg" alt="sugerencia_caipirinha"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/coctel-negroni.jpg" alt="sugerencia_negroni"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/cuba-libre.jpg" alt="sugerencia_cuba_libre"></a></li>
-                </ul>
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/daiquiri.jpg" alt="sugerencia_daiquiri"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/fernet.jpg" alt="sugerencia_fernet"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/cafeirlandes.jpg"alt="sugerencia_cafe_irlandes"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/long-island.jpg" alt="sugerencia_long_island"></a></li>
-                </ul>
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/manhattan.jpg" alt="sugerencia_manhattan"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/margarita.jpg" alt="sugerencia_margarita"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/martini.jpg" alt="sugerencia_martini"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/mojito.jpg" alt="sugerencia_mojito"></a></li>
-                </ul>
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/moscowmule.jpg" alt="sugerencia_moscow_mule"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/oldfashioned.jpg" alt="sugerencia_old_fashioned"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/piñacolada.jpg" alt="sugerencia_piña_colada"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/piscopunch.jpg" alt="sugerencia_pisco_punch"></a></li>
-                </ul>
-                <ul class="aside__father">
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/Tom-Collins-2.jpg"alt="sugerencia_tom_collins"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/whisketsour.jpg" alt="sugerencia_whiskey_sour"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/whiskeysmash.jpg" alt="sugerencia_whiskey_smash"></a></li>
-                    <li><a href="./pages/recetas.html"><img class="aside__image" src="../assets/img/aside/whiterussian.jpg" alt="sugerencia_white_russian"></a></li>
-                </ul>
-
-            </div>    
-        </aside>
+            <div class="card-body main__card  main__alert vh-40">
+              <h2 class="card-title main__text main__text--highlight main__alert--title">Parece que no ha inciado sesión.</h2>
+              <p class="card-text main__text main__text--paragraph">Recuerde que para poder visualizar y publicar sus recetas debe tener una cuenta en Ghiaccio.</p>
+              <a href="../index.html" class="btn btn-primary main__btn">Ir a pagina principal</a>
+              <a href="../index.html" class="btn btn-primary main__btn">Ir a sección de cocteles</a>
+            </div>
+          </div>
+    </div>
+</main>
+<!--------------------------------------    Aside    ------------------------------------------------------------->
 <!--------------------------------------------------------    Footer    ------------------------------------------------------------->
         <footer class="footer">
             <ul class="footer_socialNetworks">

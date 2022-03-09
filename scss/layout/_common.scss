@@ -14,12 +14,24 @@
         &--noAside{
             width: 100vw;
         }
+        &--recetario{
+            background-color: $dark-brown;
+            background-blend-mode: soft-light;
+            background-image: url(https://medahuman.com/wp-content/uploads/2020/07/cocktail-collage-copy-1340x754.jpg);
+            overflow: scroll;
+        }
         &__titulo{
             color: $dark-brown;
             @include font(5vh);
             margin-top: -2vh;
                 &--index{
                     color: $white;
+                }
+                &--recetario{
+                    padding: 5vh;
+                    font-size: 8vh;
+                    color: $hay;
+                    text-shadow: 2px 2px 3px $black;
                 }
         }
         &__subtitulo{
@@ -29,16 +41,82 @@
                     font-size: 2vh;
                 }
         }
-        &__parrafo{
+        &__card{
+            background-color: $brown;
+            &--dark{
+                background-color: $dark-brown;
+            }
+            &--light{
+                background-color: $light-brown;
+            }
+
+        }
+        &__text{
+            color: $hay;
+            font-family: $base-font;
+            &--highlight{
+                color: $gold-hay;
+            }
+            &--dark{
+                color: $dark-brown;
+            }
+            &--black{
+                color: $black;
+            }
+            &--paragraph{
+                font-size: large;
+            }
+        }
+        &__paginationNav{
+            margin: 20px;
+        }
+        &__paginationIcon{
+            height: 10px;
+            color: $hay;
+        }
+        &__btn{
             color: $dark-brown;
-            @include font(3vh);
-            padding: 1vh 1vh 0vh 1vh;
+            background-color: $hay;
+            border-color: $dark-brown;
+            font-family: $base-font;
+            font-weight: bolder;
+            &:hover{
+                background-color: $dark-brown;
+                border-color: $light-brown;
+                color: $light-brown;
+            }
+            &--dark:hover{
+                background-color: $gold-hay;
+                color: $dark-brown;
+                border-color: $dark-brown;
+            }
+            
+            &--pagination{
+                background-color: $black;
+                border-color: $dark-brown;
+                color: $gold-hay;
+                padding: 15px;
+                font-size: large;
+            }
+            &--active{
+                background-color: $coal;
+            }
+
+            }
+        &__alert{
+            border-color: $dark-brown;
+            &--container{border-radius: 2%;}
+            &--text{
+                text-shadow: 2px 2px 3px $black;
+                padding: 2%;
+            font-size: x-large;}    }
+        &__parrafo{
+            color: $hay;
+            font-family: $base-font;
                 &--index{
                     color: $white;
                 }
-                &--noAside{
-                    margin-right: -380px;
-                }
+                
                 &--light{
                     font-weight: lighter;
                 }
@@ -52,29 +130,13 @@
         }
 
         &__image{
-            width: 430px;
-            height: 250px;
-            position: relative;
-            margin-right: 10px;
-            margin-top: 0px;
-                &:hover{
-                    color: rgba(0, 0, 0, 0.788);
-                }
-                &--noAside{
-                    margin-left: 400px;
-                }
-        }
-        &__video{
-            width: 430px;
-            height: 250px;
-            position: relative;
+            border-radius: 5%
         }
         // MAPA
         &__listItem{
             @include font(map-get($font-size, medium));
         }
 
-}
 
 @media (max-width: 768px){
     .main{
@@ -92,6 +154,9 @@
         &--noAside{
             height: 100%;
         }
+        &--alert{
+            height: 30vh;
+        }
     }
 }
 
@@ -102,4 +167,4 @@
             height: 100%;
         }
     }
-}
+}}

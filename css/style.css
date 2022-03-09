@@ -34,7 +34,7 @@
   .grid--noAside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.63fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
     gap: 0px 0px;
     grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main" "footer footer footer footer"; }
 
@@ -51,7 +51,7 @@
     .grid--noAside {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.02fr 1fr 1fr 1fr 0.3fr 0.3fr 0.05fr;
       gap: 0px 0px;
       grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main" "footer footer footer footer"; } }
 
@@ -68,7 +68,7 @@
     .grid--noAside {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 0.45fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.03fr 0.5fr 0.4fr 1fr 1fr 1fr 0.03fr;
       gap: 0px 0px;
       grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main" "footer footer footer footer"; } }
 
@@ -209,6 +209,11 @@
     background-size: cover; }
   .main--noAside {
     width: 100vw; }
+  .main--recetario {
+    background-color: #241B19;
+    background-blend-mode: soft-light;
+    background-image: url(https://medahuman.com/wp-content/uploads/2020/07/cocktail-collage-copy-1340x754.jpg);
+    overflow: scroll; }
   .main__titulo {
     color: #241B19;
     font-family: "Josefin Sans", sans-serif;
@@ -217,6 +222,11 @@
     margin-top: -2vh; }
     .main__titulo--index {
       color: whitesmoke; }
+    .main__titulo--recetario {
+      padding: 5vh;
+      font-size: 8vh;
+      color: #d8ba8f;
+      text-shadow: 2px 2px 3px #090A0B; }
   .main__subtitulo {
     color: #241B19;
     font-family: "Josefin Sans", sans-serif;
@@ -224,16 +234,63 @@
     font-size: 3vh; }
     .main__subtitulo--article {
       font-size: 2vh; }
-  .main__parrafo {
+  .main__card {
+    background-color: #3c3130; }
+    .main__card--dark {
+      background-color: #241B19; }
+    .main__card--light {
+      background-color: #755a52; }
+  .main__text {
+    color: #d8ba8f;
+    font-family: "Josefin Sans", sans-serif; }
+    .main__text--highlight {
+      color: #daab5e; }
+    .main__text--dark {
+      color: #241B19; }
+    .main__text--black {
+      color: #090A0B; }
+    .main__text--paragraph {
+      font-size: large; }
+  .main__paginationNav {
+    margin: 20px; }
+  .main__paginationIcon {
+    height: 10px;
+    color: #d8ba8f; }
+  .main__btn {
     color: #241B19;
+    background-color: #d8ba8f;
+    border-color: #241B19;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: bolder;
-    font-size: 3vh;
-    padding: 1vh 1vh 0vh 1vh; }
+    font-weight: bolder; }
+    .main__btn:hover {
+      background-color: #241B19;
+      border-color: #755a52;
+      color: #755a52; }
+    .main__btn--dark:hover {
+      background-color: #daab5e;
+      color: #241B19;
+      border-color: #241B19; }
+    .main__btn--pagination {
+      background-color: #090A0B;
+      border-color: #241B19;
+      color: #daab5e;
+      padding: 15px;
+      font-size: large; }
+    .main__btn--active {
+      background-color: #1D201F; }
+  .main__alert {
+    border-color: #241B19; }
+    .main__alert--container {
+      border-radius: 2%; }
+    .main__alert--text {
+      text-shadow: 2px 2px 3px #090A0B;
+      padding: 2%;
+      font-size: x-large; }
+  .main__parrafo {
+    color: #d8ba8f;
+    font-family: "Josefin Sans", sans-serif; }
     .main__parrafo--index {
       color: whitesmoke; }
-    .main__parrafo--noAside {
-      margin-right: -380px; }
     .main__parrafo--light {
       font-weight: lighter; }
     .main__parrafo--input {
@@ -244,42 +301,29 @@
     font-size: 1rem;
     padding: 5px; }
   .main__image {
-    width: 430px;
-    height: 250px;
-    position: relative;
-    margin-right: 10px;
-    margin-top: 0px; }
-    .main__image:hover {
-      color: rgba(0, 0, 0, 0.788); }
-    .main__image--noAside {
-      margin-left: 400px; }
-  .main__video {
-    width: 430px;
-    height: 250px;
-    position: relative; }
+    border-radius: 5%; }
   .main__listItem {
     font-family: "Josefin Sans", sans-serif;
     font-weight: bolder;
     font-size: 1rem; }
-
-@media (max-width: 768px) {
-  .main {
-    width: 100vw;
-    height: auto; }
-    .main--noAside {
-      height: 100%; } }
-
-@media (max-width: 420px) {
-  .main {
-    height: 38vh; }
-    .main--noAside {
-      height: 100%; } }
-
-@media (max-width: 350px) {
-  .main {
-    height: auto; }
-    .main--noAside {
-      height: 100%; } }
+  @media (max-width: 768px) {
+    .main .main {
+      width: 100vw;
+      height: auto; }
+      .main .main--noAside {
+        height: 100%; } }
+  @media (max-width: 420px) {
+    .main .main {
+      height: 38vh; }
+      .main .main--noAside {
+        height: 100%; }
+      .main .main--alert {
+        height: 30vh; } }
+  @media (max-width: 350px) {
+    .main .main {
+      height: auto; }
+      .main .main--noAside {
+        height: 100%; } }
 
 .footer {
   grid-area: footer;
@@ -322,7 +366,7 @@
 
 @media (max-width: 350px) {
   .footer {
-    height: 40vh; } }
+    height: 20vh; } }
 
 .aside {
   /*Posibilidad de descartar parrafo item y comentario y 
@@ -360,7 +404,7 @@
     background-color: #3c3130;
     background-blend-mode: soft-light;
     background-size: cover;
-    background-image: url("/assets/img/bg-login.png"); }
+    background-image: url("../assets/img/bg-login.png"); }
   .aside__image {
     width: 90px;
     height: 90px;
