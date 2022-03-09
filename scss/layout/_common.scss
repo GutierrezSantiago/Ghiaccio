@@ -116,8 +116,12 @@
             &--active{
                 background-color: $coal;
             }
-
+        
             }
+        &__image{
+            width: 80%;
+            
+        }
         &__form{
             margin-right: 5vw;
             margin-bottom: auto;
@@ -162,8 +166,13 @@
             border-radius: 5%
         }
         // MAPA
+        &__li{
+            list-style: square;
+            color: $gold-hay;
+        }
         &__listItem{
             @include font(map-get($font-size, medium));
+            
         }
 
 

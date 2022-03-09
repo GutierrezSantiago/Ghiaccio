@@ -289,6 +289,8 @@
       font-size: large; }
     .main__btn--active {
       background-color: #1D201F; }
+  .main__image {
+    width: 80%; }
   .main__form {
     margin-right: 5vw;
     margin-bottom: auto;
@@ -322,6 +324,9 @@
     padding: 5px; }
   .main__image {
     border-radius: 5%; }
+  .main__li {
+    list-style: square;
+    color: #daab5e; }
   .main__listItem {
     font-family: "Josefin Sans", sans-serif;
     font-weight: bolder;
