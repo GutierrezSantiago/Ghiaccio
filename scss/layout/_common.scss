@@ -41,6 +41,15 @@
                     font-size: 2vh;
                 }
         }
+        &__content{
+            background-color: $black;
+            padding: 10vh 5vw;
+            border-radius: 1.5%;
+            border: 1.5px solid $black;
+            &--sm{
+                background-color: $coal;
+            }
+        }
         &__card{
             background-color: $brown;
             &--dark{
@@ -65,6 +74,12 @@
             }
             &--paragraph{
                 font-size: large;
+            }
+            &--light{
+                color: $platinum;
+            }
+            &--intermediate{
+                color: $silver;
             }
         }
         &__paginationNav{
@@ -103,6 +118,16 @@
             }
 
             }
+        &__form{
+            margin-right: 5vw;
+            margin-bottom: auto;
+            width: 40%;
+            float: right;
+            &--sm{
+                width: 35%;
+            }
+            
+        }
         &__alert{
             border-color: $dark-brown;
             &--container{border-radius: 2%;}
