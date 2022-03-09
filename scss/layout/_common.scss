@@ -109,7 +109,11 @@
             &--text{
                 text-shadow: 2px 2px 3px $black;
                 padding: 2%;
-            font-size: x-large;}    }
+            font-size: x-large;}
+            &--title{
+                font-weight: bolder;
+            }
+        }
         &__parrafo{
             color: $hay;
             font-family: $base-font;

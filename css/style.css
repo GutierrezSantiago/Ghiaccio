@@ -286,6 +286,8 @@
       text-shadow: 2px 2px 3px #090A0B;
       padding: 2%;
       font-size: x-large; }
+    .main__alert--title {
+      font-weight: bolder; }
   .main__parrafo {
     color: #d8ba8f;
     font-family: "Josefin Sans", sans-serif; }
