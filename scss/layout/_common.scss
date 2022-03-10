@@ -28,7 +28,6 @@
                     color: $white;
                 }
                 &--recetario{
-                    padding: 5vh;
                     font-size: 8vh;
                     color: $hay;
                     text-shadow: 2px 2px 3px $black;
@@ -120,7 +119,6 @@
             }
         
             
-        }
         &__form{
             margin-right: 5vw;
             margin-bottom: auto;
@@ -174,22 +172,28 @@
         &__listItem{
             @include font(map-get($font-size, medium));
             
+        }}
+
+        .zindex{
+            z-index: -1;
         }
 
 
 @media (max-width: 768px){
-    .main{
+    .main {
         width: 100vw;
-        height: auto;
+        height: 40vh;
         &--noAside{
             height: 100%;
         }
     }
+    
 }
 
 @media (max-width: 420px){
-    .main{
+    .main {
         height: 38vh;
+        width: 100vw;
         &--noAside{
             height: 100%;
         }
@@ -200,8 +204,9 @@
 }
 
 @media (max-width: 350px){
-    .main{
-        height: auto;
+    .main {
+        height: 50vh;
+        width: 100vw;
         &--noAside{
             height: 100%;
         }
