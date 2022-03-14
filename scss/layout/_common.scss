@@ -162,6 +162,9 @@
         &__image{
             border-radius: 5%;
             width: 40%;
+            &--card{
+                width: 100%;
+            }
         }
 
         // MAPA
@@ -174,9 +177,7 @@
             
         }}
 
-        .zindex{
-            z-index: 2000;
-        }
+        
 
 
 @media (max-width: 768px){
@@ -196,9 +197,6 @@
         width: 100vw;
         &--noAside{
             height: 100%;
-        }
-        &--alert{
-            height: 30vh;
         }
     }
 }

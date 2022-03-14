@@ -113,7 +113,7 @@
     &--noAside {
       display: grid; 
       grid-template-columns: 1fr 1fr 1fr 1fr; 
-      grid-template-rows: 0.25fr 1fr 1fr 1fr 1fr 1fr 0.5fr; 
+      grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 0.5fr; 
       gap: 0px 0px; 
       grid-template-areas: 
         "header header header header"
