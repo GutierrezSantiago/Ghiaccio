@@ -165,6 +165,9 @@
             &--card{
                 width: 100%;
             }
+            &--aboutUs{
+                width: 70%;
+            }
         }
 
         // MAPA
@@ -186,6 +189,9 @@
         height: 40vh;
         &--noAside{
             height: 100%;
+        }
+        &__image--aboutUs{
+            width: 95%;
         }
     }
     
