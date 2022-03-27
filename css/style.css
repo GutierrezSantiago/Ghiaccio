@@ -386,7 +386,9 @@
     .main--noAside {
       height: 100%; }
     .main__image--aboutUs {
-      width: 95%; } }
+      width: 95%; }
+      .main__input {
+        min-width: 80%;} }
 
 @media (max-width: 420px) {
   .main {
