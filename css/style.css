@@ -258,7 +258,7 @@
     background-color: #241B19;
     background-blend-mode: soft-light;
     background-image: url(https://medahuman.com/wp-content/uploads/2020/07/cocktail-collage-copy-1340x754.jpg);
-    overflow: scroll; }
+    overflow-y: auto; }
   .main__titulo {
     color: #241B19;
     font-family: "Josefin Sans", sans-serif;
@@ -365,7 +365,8 @@
     font-size: 1rem;
     padding: 5px; }
   .main__image {
-    border-radius: 5%;}
+    border-radius: 5%;
+    width: 40%; }
     .main__image--card {
       width: 100%; }
     .main__image--aboutUs {
